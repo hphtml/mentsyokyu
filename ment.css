@@ -56,7 +56,7 @@ div#test {
 
 
 /*--------------------------pcレイアウト-------------------------*/
-@media(min-width:376px){
+@media(min-width:601px){
     .container{
         width: 1440px;
         margin: 0 auto;
@@ -273,7 +273,7 @@ div#test {
 
 /*----------------------------------ここからスマホcss------------------------------------*/
 
-@media(max-width:375px){
+@media(min-width:250px) and (max-width:600px){
     footer{
         display: none;
     }
@@ -284,7 +284,9 @@ div#test {
         margin: 0 auto;
         width: 375px;
         height: 100vh;
+        /*
         overflow-x: hidden;
+        */
         box-sizing: border-box;
         position: relative;
     }
@@ -453,18 +455,27 @@ div#test {
         overflow-y: hidden;
     }
     body.menu-open #menu {
-        right: 0;
+        display: block;
     }
 
     #menu{
         position: absolute;
         top: 0;
+        /*
         right: -375px;
+        */
         width: 375px;
+        /*
         height: 812px;
+        */
+        height: 100%;
         box-sizing: border-box;
         background: #DDDDDD ;
+        display: none;
+        /*
         z-index: 2;
+        */
+        margin: 0 auto;
     }
     #menu ul{
         width: 375px;
