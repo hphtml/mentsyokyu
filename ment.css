@@ -485,27 +485,29 @@ div#test {
         margin: 22px 45px 21px 0;
         background-color: aquamarine;
     }
-    #menu #skill li{
+    #menu #skill{
         width: 54px;
         height: 26px;
         margin: 161px auto 120px auto;
     }
-    #menu #about li{
+    #menu #about{
         width: 72px;
         height: 25px;
-        margin:0 auto 120px auto;
+        margin: 0 auto 120px auto;
     }
-    #menu #contact li{
+    #menu #contact{
         width: 96px;
         height: 25px;
-        margin:0 auto 335px auto;
+        margin: 0 auto 335px auto;
     }
     #menu a{
         font: Bold 26px/26px YuGothic;
         text-decoration: none;
         color: #5F2201;
     }
-    
+    #hide{
+        margin: 22px 48px 0 0;
+    }
     .fa{
       
         width: 16px;
