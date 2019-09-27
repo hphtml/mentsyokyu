@@ -483,7 +483,6 @@ div#test {
     }
     #show{
         margin: 22px 45px 21px 0;
-        background-color: aquamarine;
     }
     #menu #skill{
         width: 54px;
@@ -513,10 +512,7 @@ div#test {
         width: 16px;
         height: 16px;
     }
-    
-    #hide{
-        background-color: #FFF3DD;
-    }
+
     /*
     .my-parts {
         display: inline-block;
