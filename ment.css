@@ -1,0 +1,561 @@
+@charset"utf-8";
+
+/* ========================================
+    リセットcss
+========================================= */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-style:normal;
+    font-weight: normal;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html{overflow-y: scroll;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+input, textarea{margin: 0; padding: 0;}
+ol, ul{list-style:none;}
+table{border-collapse: collapse; border-spacing:0;}
+caption, th{text-align: left;}
+a:focus {outline:none;}
+
+div#test {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    opacity: 0.5;
+}
+
+/* micro clearfix */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {clear: both;}
+.cf {*zoom: 1;}
+
+
+
+/*--------------------------pcレイアウト-------------------------*/
+@media(min-width:376px){
+    .container{
+        width: 1440px;
+        margin: 0 auto;
+    }
+    .background{
+        background:url("cat-1.png");
+        width: 1440px;
+        height: 738px;
+    }
+    .ko{
+        width: 980px;
+    
+        margin-right: 230px;
+        margin-left: 230px;
+    }
+    .header{
+        display: flex;
+        height: 80px;
+    }
+    header img{
+        margin-top: 11px;
+        width: 365px;
+        height: 58px;
+        vertical-align: bottom;
+    }
+    .var ul{
+        display: flex;
+        margin-top: 31px;
+        margin-bottom: 31px;
+        margin-left: 375px;
+    }
+    .var a{
+        text-decoration: none;
+    }
+    .hidari{
+        margin-right: 40px;
+        width: 38px;
+    }
+    .naka{
+        width: 52px;
+        margin-right: 40px;
+    }
+    .right{
+        width: 69px;
+    }
+    header a{
+        font: Bold 18px/27px YuGothic;
+        color: #5F2201;
+        text-align: left;
+        letter-spacing: 0;
+    }
+    
+    /*------------------------pcheader終わり---------------------------------*/
+    
+    /*---------------------pcmain-----------------------------------------------*/
+    
+    .main1text{
+        width: 980px;
+    }
+    .main1text p{
+        text-align: center;
+        width: 980px;
+        margin: 0 auto;
+        font: Bold 36px/61px YuGothic;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .maincontainer{
+        width: 980px;
+        margin: 0 auto;
+    }
+    .maincontainer p{
+        width: 400px;
+        height: 166px;
+    }
+    .ue{
+        display: flex;
+    }
+    .ue img{
+        width: 400px;
+        height: 300px;
+        margin-right: 180px;
+    }
+    .sita{
+        display: flex;
+    }
+    .sita p{
+        margin-right: 180px;
+        margin-top: 85px;
+    }
+    .sita img{
+        margin-top: 85px;
+    }
+    /*-------------------------pcmain1ここまで---------------------------*/
+    
+    /*-----------------------pcmain2ここから--------------------------------*/
+    .main2{
+        width: 1440px;
+        height: 710px;
+        background-color: #FFF3DD;
+        margin-bottom: 100px;
+    }
+    .main2text{
+        margin: 0  auto;
+        font: Bold 36px/61px YuGothic;
+        margin-top: 100px;
+        padding-top: 100px;
+        margin-bottom: 50px;
+        color: #5F2201;
+        width: 104px;
+        height: 36px;
+    }
+    .main2flex{
+        display: flex;
+    }
+    .main2textflex{
+        display: flex;
+    }
+    .border{
+        border: 3px solid #5F2201;
+        border-radius: 25px;
+        background: #FFFFFF;
+        text-align: center;
+        width: 120px;
+        height: 50px;
+    }
+    .leftimg{
+        margin-left: 350px;
+        margin-right: 240px;
+    }
+    .rightimg{
+        margin-right: 350px;
+    }
+    .leftp{
+        margin-top: 30px;
+        width: 314px;
+        height: 44px;
+        margin-left: 318px;
+        margin-right: 176px;
+    }
+    .rightp{
+        margin-top: 30px;
+        margin-right: 176px;
+        width: 314px;
+        height: 44px;
+    }
+    .border{
+        margin-left: 660px;
+        margin-right: 660px;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    .border p{
+        font: Bold 16px/50px YuGothic;
+    }
+    
+    /*---------------------pcmain3ここから----------------------*/
+    
+    .main3text{
+        text-align: center;
+        font: Bold 36px/36px YuGothic;
+        color: #5F2201;
+        margin-bottom: 50px;
+        width: 138px;
+        margin:  0 auto 50px auto;
+    }
+    .main3container{
+        display: flex;
+        width: 800px;
+        height: 300px;
+        margin: 0 auto;
+    }
+    .main3{
+        width: 300px;
+        height: 96px;
+        margin-left: 200px;
+        margin-top: 102px;
+        margin-right: 90px;
+    }
+    .main3 p{
+        text-align: center;
+    }
+    .bordermap{
+        border: 3px solid #5F2201;
+        border-radius: 25px;
+        background: #FFFFFF;
+        text-align: center;
+        width: 100px;
+        height: 45px;
+        font: Bold 16px/45px YuGothic;
+        margin: 20px auto 0 auto;
+        color: #5F2201;
+    
+    }
+    footer{
+        height: 60px;
+        background: #B9B9B9;
+        width: 1440px;
+        margin: 100px auto 0 auto;
+    }
+    footer p{
+        text-align: center;
+        font-family:YuGothic;
+        line-height: 60px;
+        font-weight: 500;
+        font-size: 12px; 
+        color: #FFFFFF;
+    }
+    .sumahopc{
+        display: none;
+    }
+}
+
+
+/*----------------------------------ここからスマホcss------------------------------------*/
+
+@media(max-width:375px){
+    footer{
+        display: none;
+    }
+    .pcpc{
+        display: none;
+    }
+    body{
+        margin: 0 auto;
+        width: 375px;
+        height: 100vh;
+        overflow-x: hidden;
+        box-sizing: border-box;
+        position: relative;
+    }
+    .logo{
+        width:126px;
+        height:20px;
+        margin-top: 20px;
+        margin-left: 15px;
+        margin-right: 170px;
+        margin-bottom: 20px;
+    }
+    /*------------------------header終わり-----------------------*/
+    .sumahomain1img img{
+        width: 375px;
+        height: 192px;
+        vertical-align:bottom;
+
+    }
+    .sumahomaintext1 p{
+        font: Bold 20px/34px YuGothic;
+        text-align: center;
+        width: 42px;
+        height: 20px;
+        margin: 50px auto 40px auto;
+        line-height: 20px;
+        color: #5F2201;
+    }
+    .sumahomain1{
+        width: 345px;
+        margin: 0 auto;
+    }
+    .sumahomain1 img{
+        width: 100%;
+        height: 259px;
+        margin-bottom: 30px;
+    }
+    .sumahomain1 p{
+        width: 345px;
+        height: 156px;
+        margin-bottom: 39px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 26px;
+        font-family: YuGothic;
+    }
+    /*---------------------------------main1終わり-------------------------*/
+    .sumahomain2{
+        background: #FFF3DD;
+        height:952px;
+    }
+    .sumahomaintext2{
+        padding-top: 50px;
+        padding-bottom: 40px;
+        width: 58px;
+        height: 20px;
+        margin:  0 auto;
+        
+    }
+    .sumahomaintext2  p{
+        font: Bold 20px/20px YuGothic;
+        text-align: center;
+        color: #5F2201;
+    }
+    .sumahomain2img{
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+        padding-bottom: 31px;
+    }
+    .sumahomain2img img{
+        width: 250px;
+        height: 250px;
+    }
+    .sumahomaintext2{
+        width: 58px;
+        height: 20px;
+    }
+    .sumahomain2text3 p{
+        width: 294px;
+        height: 41px;
+        margin: 0 auto 0 auto;
+    }
+    .sumahomain2text3{
+        margin-bottom: 50px;
+    }
+    .sumahomain2text4 p{
+        width: 294px;
+        height: 41px;
+        margin: 0 auto 0 auto;
+    }
+    .button{
+        margin: 50px auto 0 auto;
+        background: #FFFFFF;
+        border: 3px solid #5F2201;
+        border-radius: 25px;
+        width: 120px;
+        height: 48px;
+        text-align: center;
+        font: Bold 15px/48px YuGothic;
+        color: #5F2201;
+    }
+    /*--------------------------main2ここまで-----------------------*/
+    .sumahomain3text{
+        font: Bold 20px/34px YuGothic;
+        width: 76px;
+        height: 20px;
+        margin: 50px auto 40px auto;   
+        line-height: 20px;
+        color: #5F2201;
+    }
+    .sumahomain3img{
+        width: 300px;
+        height: 300px;
+        margin: 0 auto 50px auto;
+    }
+    .sumahomain3text1{
+        font-weight: 500;
+        font-size: 15px;
+        line-height:15px;
+        font-family: YuGothic;
+        width: 185px;
+        height: 15px;  
+        margin: 0 auto 30px auto; 
+        
+    }
+    .sumahomain3button{
+        width: 100px;
+        height: 48px;
+        background: #FFFFFF;
+        border: 3px solid #5F2201;
+        margin:  0 auto 50px auto;
+        border-radius: 25px;
+        text-align: center;
+        font: Bold 15px/27px YuGothic;
+    }
+    .sumahomain3button p{
+        width: 34px;
+        height: 15px;
+        text-align: center;
+        line-height: 48px;
+        margin:  0 auto; 
+        color: #5F2201;
+    }
+    .footer{
+        background: #B9B9B9;
+        height: 30px;
+        width: 375px;
+    }
+    .footer p{
+        font-weight: 500;
+        font-size:12px;
+        line-height: 30px;
+        font-family: YuGothic;
+        width: 110px;
+        height: 30px;
+        color: #FFFFFF;
+        margin:  0 auto;
+        letter-spacing: 0;
+    }
+    /*-------------------------ハンバーガの実装--------------------------*/
+    #show, #hide {
+        float: right;
+        cursor: pointer;
+    }
+    body.menu-open {
+        overflow-y: hidden;
+    }
+    body.menu-open #menu {
+        right: 0;
+    }
+
+    #menu{
+        position: absolute;
+        top: 0;
+        right: -375px;
+        width: 375px;
+        height: 812px;
+        box-sizing: border-box;
+        background: #DDDDDD ;
+        z-index: 2;
+    }
+    #menu ul{
+        width: 375px;
+        height: 812px; 
+    }
+    #show{
+        margin: 22px 45px 21px 0;
+        background-color: aquamarine;
+    }
+    #menu #skill li{
+        width: 54px;
+        height: 26px;
+        margin: 161px auto 120px auto;
+    }
+    #menu #about li{
+        width: 72px;
+        height: 25px;
+        margin:0 auto 120px auto;
+    }
+    #menu #contact li{
+        width: 96px;
+        height: 25px;
+        margin:0 auto 335px auto;
+    }
+    #menu a{
+        font: Bold 26px/26px YuGothic;
+        text-decoration: none;
+        color: #5F2201;
+    }
+    
+    .fa{
+      
+        width: 16px;
+        height: 16px;
+    }
+    
+    #hide{
+        background-color: #FFF3DD;
+    }
+    /*
+    .my-parts {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        position: relative;
+        cursor: pointer;
+    }
+    .my-parts span::before,
+    .my-parts span::after {
+        display: block;
+        content: "";
+        position: absolute;
+        top: -300%;
+        left: 50%;
+        width: 84%;
+        height: 16%;
+        background: black;
+    }
+    .my-parts span::before {
+        transform: rotate(-45deg);
+    }
+    .my-parts span::after {
+        transform: rotate(45deg);
+    }
+    */
+
+    /*--------------bargamenu----------------
+    #nav-open span, #nav-open span:before, #nav-open span:after {
+    position: absolute;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background: #555;
+    display: block;
+    content: '';
+    cursor: pointer;
+    }
+    #nav-open span:before {
+    bottom: -8px;
+    }
+    #nav-open span:after {
+    bottom: -16px;
+    }
+    --*/
+    /*
+    #nav-open{
+        width: 20px;
+        height: 3px;
+        margin: 3px;
+        background-color: #5F2201;
+    }
+    */
+}
+
