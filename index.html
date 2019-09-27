@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="ment.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="pcpc">
+        <div class="container">
+            <div class="ko">
+                <header>
+                    <div class="header">
+                        <img src="logo.png">
+                        <div class="var">
+                            <ul>
+                                <li class="hidari"><a href="">Skill</a></li>
+                                <li class="naka"><a href="">About</a></li>
+                                <li class="right"><a href="">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </header> 
+            </div>
+            <div class="background"></div>
+        </div>
+        <div class="container">
+            <div class="ko">  
+                <div class=main1text><p>Skill</p></div> 
+                <div class="maincontainer">
+                    <div class="ue">
+                        <img src="cat-2.png">
+                        <p>We sleep whenever we want. We sleep wherever we want.
+                            All places can be our beds. We sleep whenever we want. 
+                            We sleep wherever we want. All places can be our beds. 
+                            We sleep whenever we want. 
+                            We sleep wherever we want. All places can be our beds.
+                        </p>
+                    </div>
+                    <div class="sita">
+                        <p>We sleep whenever we want. We sleep wherever we want.
+                                All places can be our beds. We sleep whenever we want. 
+                                We sleep wherever we want. All places can be our beds. 
+                                We sleep whenever we want. 
+                                We sleep wherever we want. All places can be our beds.
+                        </p>
+                        <img src="cat-3.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------------------------------------------main1ここまで------------>
+        <div class="container">
+            <div class="main2">
+                <p class="main2text">About</p>
+                <div class="main2flex">
+                    <div class="leftimg"><img src="cat-4.png"></div>
+                    <div class="rightimg"><img src="cat-5.png"></div>
+                </div>
+                <div class="main2textflex">
+                    <p class="leftp">We are cute. There is no doubt about this. 
+                        Nobody can’t object to this fact.
+                    </p>
+                    <p class="rightp">We are cute. There is no doubt about this. 
+                        Nobody can’t object to this fact.
+                    </p>
+                </div>
+                <div class="border">
+                    <p>MORE</p>
+                </div>
+            </div>
+        </div>
+        <!-----------------------------------------------main2ここまで---->
+        <p class="main3text">Contact</p>
+        <div class="main3container">
+                <img src="cat-6.png">
+            <div class="main3">     
+                <p>You can come to see me.</p>
+                <div class="bordermap">Map</div>
+            </div>
+        </div>   
+    </div>
+    <!-----------------------------------ここからスマホ用HTML------------------------------------------>
+    <div class="sumahopc">
+        <div id="main">
+            <img src="logo.png" class="logo">
+            <!--
+            <div class="my-parts" id="show"><span></span></div>
+            -->
+            
+            <i class="fa fa-bars" id="show"></i>
+            
+            <div class="sumahomain1img"><img src="cat-1@2x.png"></div>
+            <div class="sumahomaintext1">
+                <p>Skill</p>
+            </div>
+            <div class="sumahomain1">
+                <img src="cat-2.png">
+                <p>
+                    We sleep whenever we want. We sleep wherever we want.
+                    All places can be our beds. We sleep whenever we want. 
+                    We sleep wherever we want. All places can be our beds.
+                    We sleep whenever we want.
+                    We sleep wherever we want. All places can be our beds.
+                </p>
+                <img src="cat-3.png">
+                <p>
+                    We sleep whenever we want. We sleep wherever we want.
+                    All places can be our beds. We sleep whenever we want. 
+                    We sleep wherever we want. All places can be our beds.
+                    We sleep whenever we want.
+                    We sleep wherever we want. All places can be our beds.
+                </p>
+            </div>
+            <!-----------------------------ここまでmain1------------------------->
+            <div class="sumahomain2">
+                <div class="sumahomaintext2"><p>About</p></div>
+                <div class="sumahomain2img"><img src="cat-4.png"></div>
+                <div class="sumahomain2text3">
+                <p>
+                    We are cute. 
+                    There is no doubt about this. 
+                    Nobody can’t object to this fact.
+                </p>
+                </div>
+                <div class="sumahomain2img"><img src="cat-5.png"></div>
+                <div class="sumahomain2text4">
+                <p>
+                    We are cute. 
+                    There is no doubt about this. 
+                    Nobody can’t object to this fact.
+                </p>
+                </div>
+                <div class="button">MORE</div>
+            </div>
+            <!-----------------------------ここまでmain2---------------------------->
+            <!--------------------------------footer------------------------------------->
+            <div class="sumahomain3text">Contact</div>
+            <div class="sumahomain3img"><img src="cat-6.png"></div>
+            <p class="sumahomain3text1">You can come to see me.</p>
+            <div class="sumahomain3button"><p>MAP</p></div>
+            <div class="footer"><p>We are munchkin</p></div>
+        </div>
+        <!-------------------------------------hide menu----------------------------------->
+        <div id="menu">
+            <i class="fa fa-times" id="hide"></i>
+            <ul>
+                <div id="skill"><li><a href="">Skill</a></li></div>
+                <div id="about"><li><a href="">About</a></li></div>
+                <div id="contact"><li><a href="">Contact</a></li></div>
+            </ul>
+        </div>
+    </div>
+    <script>
+        var show=document.getElementById("show");
+        var hide=document.getElementById("hide");
+        show.addEventListener("click",function(){
+            document.body.className="menu-open";
+        })
+        hide.addEventListener("click",function(){
+            document.body.className="";
+        })
+    </script>
+</body>
+<footer>
+    <p>We are munchikn</p>
+</footer>
+</html>
