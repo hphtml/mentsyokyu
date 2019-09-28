@@ -56,7 +56,7 @@ div#test {
 
 
 /*--------------------------pcレイアウト-------------------------*/
-@media(min-width:601px){
+@media(min-width:1440px){
     .container{
         width: 1440px;
         margin: 0 auto;
@@ -153,11 +153,14 @@ div#test {
     /*-------------------------pcmain1ここまで---------------------------*/
     
     /*-----------------------pcmain2ここから--------------------------------*/
-    .main2{
+    .main2container{
         width: 1440px;
         height: 710px;
         background-color: #FFF3DD;
-        margin-bottom: 100px;
+    }
+    .main2{
+        width: 800px;
+        margin: 0 auto 100px auto;
     }
     .main2text{
         margin: 0  auto;
@@ -184,30 +187,33 @@ div#test {
         height: 50px;
     }
     .leftimg{
-        margin-left: 350px;
+        margin-left: 32px;
         margin-right: 240px;
     }
     .rightimg{
-        margin-right: 350px;
+        margin-right: 32px;
     }
     .leftp{
         margin-top: 30px;
         width: 314px;
         height: 44px;
-        margin-left: 318px;
+        
         margin-right: 176px;
     }
     .rightp{
         margin-top: 30px;
-        margin-right: 176px;
+        
         width: 314px;
         height: 44px;
     }
     .border{
-        margin-left: 660px;
-        margin-right: 660px;
+        margin-left: 430px;
+        margin-right: 430px;
         margin-top: 50px;
         margin-bottom: 100px;
+        width: 120px;
+        height: 50;
+        margin: 50px auto 100px auto;
     }
     .border p{
         font: Bold 16px/50px YuGothic;
@@ -215,15 +221,19 @@ div#test {
     
     /*---------------------pcmain3ここから----------------------*/
     
+    .main3container{
+        width: 980px;
+        margin: 0 auto;
+    }
     .main3text{
         text-align: center;
         font: Bold 36px/36px YuGothic;
         color: #5F2201;
         margin-bottom: 50px;
         width: 138px;
-        margin:  0 auto 50px auto;
+        margin:  100px auto 50px auto;
     }
-    .main3container{
+    .main3flex{
         display: flex;
         width: 800px;
         height: 300px;
@@ -270,10 +280,275 @@ div#test {
     }
 }
 
+/*----------------------------------pcレイアウトここまで-----------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------ipadレイアウト-----------------------------------------*/
+/*--
+    @media(min-width:980px){
+        .container{
+            width: 1440px;
+            margin: 0 auto;
+        }
+        .background{
+            background:url("cat-1.png");
+            width: 1440px;
+            height: 738px;
+        }
+        .ko{
+            width: 980px;
+        
+            margin-right: 230px;
+            margin-left: 230px;
+        }
+        .header{
+            display: flex;
+            height: 80px;
+        }
+        header img{
+            margin-top: 11px;
+            width: 365px;
+            height: 58px;
+            vertical-align: bottom;
+        }
+        .var ul{
+            display: flex;
+            margin-top: 31px;
+            margin-bottom: 31px;
+            margin-left: 375px;
+        }
+        .var a{
+            text-decoration: none;
+        }
+        .hidari{
+            margin-right: 40px;
+            width: 38px;
+        }
+        .naka{
+            width: 52px;
+            margin-right: 40px;
+        }
+        .right{
+            width: 69px;
+        }
+        header a{
+            font: Bold 18px/27px YuGothic;
+            color: #5F2201;
+            text-align: left;
+            letter-spacing: 0;
+        }
+*/ 
+        /*------------------------pcheader終わり---------------------------------*/
+        
+        /*---------------------pcmain-----------------------------------------------*/
+  
+/*
+        .main1text{
+            width: 980px;
+        }
+        .main1text p{
+            text-align: center;
+            width: 980px;
+            margin: 0 auto;
+            font: Bold 36px/61px YuGothic;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+        .maincontainer{
+            width: 980px;
+            margin: 0 auto;
+        }
+        .maincontainer p{
+            width: 400px;
+            height: 166px;
+        }
+        .ue{
+            display: flex;
+        }
+        .ue img{
+            width: 400px;
+            height: 300px;
+            margin-right: 180px;
+        }
+        .sita{
+            display: flex;
+        }
+        .sita p{
+            margin-right: 180px;
+            margin-top: 85px;
+        }
+        .sita img{
+            margin-top: 85px;
+        }
+
+*/
+        /*-------------------------pcmain1ここまで---------------------------*/
+        
+        /*-----------------------pcmain2ここから--------------------------------*/
+/*        
+        .main2container{
+            width: 100%;
+            height: 710px;
+            background-color: #FFF3DD;
+        }
+        .main2{
+            width: 800px;
+            margin: 0 auto 100px auto;
+        }
+        .main2text{
+            margin: 0  auto;
+            font: Bold 36px/61px YuGothic;
+            margin-top: 100px;
+            padding-top: 100px;
+            margin-bottom: 50px;
+            color: #5F2201;
+            width: 104px;
+            height: 36px;
+        }
+        .main2flex{
+            display: flex;
+        }
+        .main2textflex{
+            display: flex;
+        }
+        .border{
+            border: 3px solid #5F2201;
+            border-radius: 25px;
+            background: #FFFFFF;
+            text-align: center;
+            width: 120px;
+            height: 50px;
+        }
+        .leftimg{
+            margin-left: 32px;
+            margin-right: 240px;
+        }
+        .rightimg{
+            margin-right: 32px;
+        }
+        .leftp{
+            margin-top: 30px;
+            width: 314px;
+            height: 44px;
+            
+            margin-right: 176px;
+        }
+        .rightp{
+            margin-top: 30px;
+            
+            width: 314px;
+            height: 44px;
+        }
+        .border{
+            margin-left: 430px;
+            margin-right: 430px;
+            margin-top: 50px;
+            margin-bottom: 100px;
+            width: 120px;
+            height: 50;
+            margin: 50px auto 100px auto;
+        }
+        .border p{
+            font: Bold 16px/50px YuGothic;
+        }
+
+
+*/
+        /*---------------------pcmain3ここから----------------------*/
+
+        
+/*
+        .main3container{
+            width: 980px;
+            margin: 0 auto;
+        }
+        .main3text{
+            text-align: center;
+            font: Bold 36px/36px YuGothic;
+            color: #5F2201;
+            margin-bottom: 50px;
+            width: 138px;
+            margin:  100px auto 50px auto;
+        }
+        .main3flex{
+            display: flex;
+            width: 800px;
+            height: 300px;
+            margin: 0 auto;
+        }
+        .main3{
+            width: 300px;
+            height: 96px;
+            margin-left: 200px;
+            margin-top: 102px;
+            margin-right: 90px;
+        }
+        .main3 p{
+            text-align: center;
+        }
+        .bordermap{
+            border: 3px solid #5F2201;
+            border-radius: 25px;
+            background: #FFFFFF;
+            text-align: center;
+            width: 100px;
+            height: 45px;
+            font: Bold 16px/45px YuGothic;
+            margin: 20px auto 0 auto;
+            color: #5F2201;
+        
+        }
+        footer{
+            height: 60px;
+            background: #B9B9B9;
+            width: 100%;
+            margin: 100px auto 0 auto;
+        }
+        footer p{
+            text-align: center;
+            font-family:YuGothic;
+            line-height: 60px;
+            font-weight: 500;
+            font-size: 12px; 
+            color: #FFFFFF;
+        }
+        .sumahopc{
+            display: none;
+        }
+
+    }
+
+*/
+
+
+/*---------------------------------ipadここまで------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
 
 /*----------------------------------ここからスマホcss------------------------------------*/
 
-@media(min-width:250px) and (max-width:600px){
+@media(min-width:250px) and (max-width:1439px){
     footer{
         display: none;
     }
